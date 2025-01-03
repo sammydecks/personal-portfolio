@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+  
+section#introduction {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    grid-gap: 50px; 
+    width: 80%;
+    margin: 100px auto;
+    align-items: center; 
+}
+
+#portrait img {
+    border-radius: 10%;
+    width: 325px;
+    height: 500px;
+}
+
+#introduction div {
+    max-width: 100%;
+}
+
+#hello {
+    font-size: 3.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #A1B573ff;
+    padding: 10px; 
+    position: fixed; 
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+nav a {
+    text-decoration: none; 
+    font-size: 1.2em;
+    padding: 5px 10px;
+    color: white;
+    transition: color 0.3s ease; 
+}
+
+nav .right-links a:hover {
+    color: #7F9073ff; 
+    font-weight: bold;
+}
+
+nav .right-links {
+    float: right;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #7F9073ff; 
+    color: white;  
+    width: 100%;   
+    padding: 10px 0; 
+    text-align: center; 
+}
+
+footer a {
+    text-decoration: none; 
+    color: white; 
+    transition: color 0.3s ease; 
+}
+
+footer a:hover {
+    font-weight: bold; 
+}
+
+#name {
+    font-family: 'Pacifico', cursive, sans-serif; 
+    font-size: 2em; 
+    color: #333; 
+    letter-spacing: 4px; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+  }
+  
+  #name:hover {
+    transform: scale(1.05); 
+  }
+
+  .highlight {
+    color: #7F9073ff;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
