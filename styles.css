@@ -22,6 +22,19 @@ section#introduction {
     height: 500px;
 }
 
+@media (max-width: 768px) {
+    section#introduction {
+        grid-template-columns: 1fr; 
+        text-align: center;
+    }
+
+    #portrait img {
+        width: 80%;
+        height: auto; 
+        margin: 0 auto; 
+    }
+}
+
 #introduction div {
     max-width: 100%;
 }
