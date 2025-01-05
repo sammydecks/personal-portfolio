@@ -3,55 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-}
-  
-section#introduction {
-    display: grid;
-    grid-template-columns: 1fr 2fr; 
-    grid-gap: 50px; 
-    width: 80%;
-    margin: 100px auto;
-    align-items: center; 
-}
-
-#portrait img {
-    border-radius: 10%;
-    width: 325px;
-    height: 500px;
-}
-
-@media (max-width: 768px) {
-    section#introduction {
-        grid-template-columns: 1fr; 
-        text-align: center;
-    }
-
-    #portrait img {
-        width: 80%;
-        height: auto; 
-        margin: 0 auto; 
-    }
-}
-
-#introduction div {
-    max-width: 100%;
-}
-
-#hello {
-    font-size: 3.5em;
-}
-
-h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-top: 10px;
 }
 
 nav {
@@ -86,6 +37,79 @@ nav .right-links {
     margin-right: 20px;
 }
 
+#name {
+    font-family: 'Pacifico', cursive, sans-serif; 
+    font-size: 2em; 
+    color: #333; 
+    letter-spacing: 4px; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+  }
+  
+#name:hover {
+    transform: scale(1.05); 
+}
+
+section{
+    padding: 20px;
+    margin: 20px 0;
+}
+  
+#introduction {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    grid-gap: 50px; 
+    width: 80%;
+    margin: 0px auto;
+    align-items: center; 
+    margin-top: 100px;
+}
+
+#portrait img {
+    border-radius: 10%;
+    width: 325px;
+    height: auto;
+}
+
+#hello {
+    font-size: 3.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+#skills {
+    text-align: center;
+}
+
+.list {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.list li {
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1.2em; 
+    font-weight: bold; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for depth */
+    transition: transform 0.3s ease; 
+}
+
+.list li:hover {
+    transform: scale(1.1); 
+}
+
 footer {
     background-color: #7F9073ff; 
     color: white;  
@@ -104,20 +128,35 @@ footer a:hover {
     font-weight: bold; 
 }
 
-#name {
-    font-family: 'Pacifico', cursive, sans-serif; 
-    font-size: 2em; 
-    color: #333; 
-    letter-spacing: 4px; 
-    transition: color 0.3s ease, transform 0.3s ease; 
-  }
-  
-  #name:hover {
-    transform: scale(1.05); 
-  }
-
-  .highlight {
+.highlight {
     color: #7F9073ff;
     font-weight: bold;
     font-size: 1.1em;
-  }
+}
+
+#divider {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+@media (max-width: 768px) {
+    section#introduction {
+        display: block;
+        text-align: center;
+    }
+
+    #portrait img {
+        width: 80%;
+        height: auto; 
+        margin: 0px auto; 
+        margin-top: 20px;
+    }
+
+    .list {
+        margin-top: 10px;
+        flex-direction: column; 
+        align-items: center;
+    }
+}
