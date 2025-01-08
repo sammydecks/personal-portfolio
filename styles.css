@@ -64,14 +64,40 @@ section{
     margin-top: 100px;
 }
 
+#portrait {
+    text-align: center;
+}
+
 #portrait img {
     border-radius: 10%;
     width: 325px;
     height: auto;
 }
 
+
+#socialLinks a {
+    font-size: 2.5rem; 
+    color: #333; 
+    transition: transform 0.3s, color 0.3s; 
+}
+  
+#socialLinks a:hover {
+    color: #0073b1; 
+    transform: scale(1.2); 
+}
+  
+  #socialLinks i {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  
+  #socialLinks a:hover i {
+    transform: scale(1.1); 
+  }
+
 #hello {
-    font-size: 3.5em;
+    font-size: 4em;
 }
 
 h1 {
@@ -137,7 +163,6 @@ footer a:hover {
 #divider {
     max-width: 80%;
     margin: 0 auto;
-    margin-top: 50px;
 }
 
 
