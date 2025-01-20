@@ -110,7 +110,7 @@ p {
     margin-top: 10px;
 }
 
-#skills, #projects {
+#skills {
     text-align: center;
 }
 
@@ -165,9 +165,25 @@ footer a:hover {
     margin: 0 auto;
 }
 
+#projects {
+    padding: 20px;
+}
+
+.projects-header {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;  
+    justify-content: center;
+}
+
 .project img {
     width: 250px;
-    height: auto;
+    height: 250px;
     border: 1px solid #ccc; 
 }
 
@@ -176,13 +192,12 @@ footer a:hover {
     border: 1px solid #ccc; 
     border-radius: 8px;
     padding: 10px;
-    margin: 0 auto;
     width: 20%;
     height: 500px;
     font-size: 0.8em; 
-    font-weight: bold; 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
+    text-align: center;
 }
 
 .project:hover {
@@ -192,6 +207,7 @@ footer a:hover {
 .languages {
     font-style: italic;
     font-size: 1.1em;
+    font-weight: bold;
 }
 
 
