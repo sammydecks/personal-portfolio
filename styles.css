@@ -110,7 +110,7 @@ p {
     margin-top: 10px;
 }
 
-#skills {
+#skills, #projects {
     text-align: center;
 }
 
@@ -160,9 +160,38 @@ footer a:hover {
     font-size: 1.1em;
 }
 
-#divider {
+.divider {
     max-width: 80%;
     margin: 0 auto;
+}
+
+.project img {
+    width: 250px;
+    height: auto;
+    border: 1px solid #ccc; 
+}
+
+.project {
+    background-color: white; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 20%;
+    height: 500px;
+    font-size: 0.8em; 
+    font-weight: bold; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+}
+
+.project:hover {
+    transform: scale(1.05); 
+}
+
+.languages {
+    font-style: italic;
+    font-size: 1.1em;
 }
 
 
