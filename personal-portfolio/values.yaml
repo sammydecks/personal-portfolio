@@ -1,0 +1,3 @@
+appName: portfolio
+imageName: sammydecker/portfolio-site:latest
+namespace: personal-portfolio

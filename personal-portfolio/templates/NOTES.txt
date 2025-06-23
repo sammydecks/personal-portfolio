@@ -1,0 +1,2 @@
+How to access after deployment via port forwarding:
+kubectl port-forward deployment/portfolio -n personal-portfolio 8080:80
