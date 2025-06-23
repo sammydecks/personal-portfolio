@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: portfolio
-        image: portfolio-site
+        image: sammydecker/portfolio-site:latest
         ports:
         - containerPort: 80
         imagePullPolicy: IfNotPresent
