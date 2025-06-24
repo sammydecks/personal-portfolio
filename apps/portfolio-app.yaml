@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/sammydecks/personal-portfolio
     targetRevision: HEAD
-    path: charts/personal-portfolio
+    path: ../charts/personal-portfolio
     helm:
       releaseName: portfolio
   destination:
